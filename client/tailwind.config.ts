@@ -9,19 +9,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--bg-primary)",
-        white: '#ffffff',
-        black: '#000000',
-        purple: '#3f3cbb',
-        midnight: '#121063',
-        metal: '#565584',
-        tahiti: '#3ab7bf',
-        silver: 'var(--color-beige)',  
+        primary: "var(--color-primary)",
+        accent: "var(--color-accent)",
+        white: 'var(--color-white)',
+        black: 'var(--color-black)',
+        blue: 'var(--color-blue)',
+        green: 'var(--color-green)',
+        red: 'var(--color-red)',
+        orange: 'var(--color-orange)',
+        beige: 'var(--color-beige)',  
         gray: {
-          200: '#F2F2F2',
-          300: '#DFDBD8',
-          400: '#5C6F8E'
+          200: 'var(--color-light-gray)',
+          300: 'var(--color-gray)',
+          400: 'var(--color-dark-gray)'
         } 
+      },
+      textColor: {
+        primary: 'var(--color-text-primary)',
+        secondary: 'var(--color-text-secondary)',
+        accent: 'var(--color-text-accent)',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
