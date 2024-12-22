@@ -10,6 +10,10 @@
       cursor: default;
    }
 
+   &.rounded {
+      border-radius: 50%;
+   }
+
    &.ghost,
    &:disabled {
       &:hover {

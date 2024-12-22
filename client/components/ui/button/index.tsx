@@ -11,6 +11,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
       iconSrc?: string;
       iconAlt?: string;
       fullWidth?: boolean;
+      rounded?: boolean;
       size?: 'sm' | 'md';
    };
 
@@ -21,6 +22,7 @@ export const Button: FC<ButtonProps> = ({
    iconAlt,
    fullWidth = false,
    size = 'md',
+   rounded = false,
    ...props
 }) => {
    const isIconOnly = !!iconSrc && !!iconAlt && !text;
@@ -34,7 +36,8 @@ export const Button: FC<ButtonProps> = ({
             { [styles.ghost]: btnType === 'ghost' },
             { [styles.text]: btnType === 'text' },
             { [styles.fullWidth]: fullWidth },
-            { [styles.sm]: size === 'sm' }
+            { [styles.sm]: size === 'sm' },
+            { [styles.rounded]: rounded }
          )}
          {...props}
       >

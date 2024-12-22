@@ -2,7 +2,7 @@
 import { FC } from 'react';
 import { usePathname } from 'next/navigation';
 
-import { MenuItemProps } from '@/components/layout/menu/menuItems';
+import { MenuItemProps } from '@/components/layout/menu/nav-menu/menuItems';
 import { Link } from '@/components/ui';
 
 export const MenuLink: FC<MenuItemProps> = ({ path, label }) => {
