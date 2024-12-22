@@ -1,0 +1,22 @@
+@import '../../../styles/variables';
+
+.card {
+   width: min-content;
+   // padding: $space-md;
+   // background: $color-white;
+   border-radius: $radius-base;
+
+   &.fullWidth {
+      width: 100%;
+   }
+
+   &.bordered {
+      padding: $space-md;
+      // background: $color-white;
+      border: 1px solid $color-gray;
+   }
+
+   @media screen and (max-width: $screen-sm) {
+      width: 100%;
+   }
+}

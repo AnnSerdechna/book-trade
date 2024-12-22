@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+.text {
+   color: $color-text-primary;
+   font-weight: $font-default;
+   font-family: $family-sans;
+   font-size: $font-size-xs;
+
+   &.base {
+      font-size: $font-size-base;
+   }
+
+   &.secondary {
+      color: $color-text-secondary;
+   }
+}

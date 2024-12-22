@@ -1,0 +1,9 @@
+@import '../../../styles/mixin';
+
+.userCard {
+   @include flex-row();
+
+   .userInfo {
+      @include flex-column();
+   }
+}

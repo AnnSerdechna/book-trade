@@ -1,0 +1,62 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+
+.button {
+   @include primary-btn();
+   transition: border $transition-delay;
+
+   &:disabled {
+      opacity: 0.5;
+      cursor: default;
+   }
+
+   &.ghost,
+   &:disabled {
+      &:hover {
+         box-shadow: none;
+      }
+   }
+
+   &.ghost {
+      background: transparent;
+      border: 1px solid transparent;
+   }
+
+   &.outline {
+      @include outline-btn();
+   }
+
+   &.text {
+      width: min-content;
+      height: min-content;
+      padding: 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+
+      &.sm.iconOnly,
+      &.iconOnly {
+         height: min-content;
+         width: min-content;
+         @include flex-center();
+      }
+   }
+
+   &.iconOnly {
+      @include icon-button();
+      padding: 0;
+   }
+
+   &.sm {
+      height: 32px;
+      font-size: $font-size-xs;
+
+      &.iconOnly {
+         @include icon-button($btn-icon-size-sm);
+      }
+   }
+
+   &.fullWidth {
+      width: 100%;
+   }
+}

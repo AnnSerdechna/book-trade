@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 
+// rem value = 1200px / 16px(html font size)
+
 export default {
    content: [
       './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,6 +11,7 @@ export default {
    theme: {
       extend: {
          colors: {
+            transparent: 'transparent',
             primary: 'var(--color-primary)',
             accent: 'var(--color-accent)',
             white: 'var(--color-white)',
@@ -31,6 +34,24 @@ export default {
          },
          fontFamily: {
             sans: ['Poppins', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+         },
+         maxWidth: {
+            container: 'var(--width-container)',
+         },
+         height: {
+            header: 'var(--height-header)',
+         },
+         borderRadius: {
+            sm: 'var(--border-radius-sm)',
+            md: 'var(--border-radius-md)',
+         },
+         fontSize: {
+            xs: 'var(--font-size-xs)',
+            sm: 'var(--font-size-sm)',
+            md: 'var(--font-size-md)',
+            lg: 'var(--font-size-lg)',
+            xl: 'var(--font-size-xl)',
          },
       },
    },

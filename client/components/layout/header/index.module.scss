@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: $height-header;
+   padding: 0 $space-md;
+}
+
+.headerLeft {
+   display: flex;
+   align-items: center;
+   gap: $space-lg;
+}

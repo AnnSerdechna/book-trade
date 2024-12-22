@@ -1,0 +1,49 @@
+@import '@/styles/variables';
+
+@mixin flex-row($gap: $space-md) {
+   display: flex;
+   gap: $gap;
+}
+
+@mixin flex-column($gap: $space-md) {
+   @include flex-row($gap);
+   flex-direction: column;
+}
+
+@mixin flex-center() {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin grid($cols: 4, $gap: $space-md) {
+   display: grid;
+   grid-template-columns: repeat($cols, 1fr);
+   gap: $gap;
+}
+
+@mixin primary-btn($height: $btn-height-md) {
+   gap: $space-xs;
+   height: $height;
+   padding: 0 $space-lg;
+   color: $color-white;
+   font-size: $font-size-base;
+   background: $color-blue;
+   border-radius: $radius-base;
+   transition: box-shadow $transition-delay;
+
+   &:hover {
+      box-shadow: $shadow-btn-hover;
+   }
+}
+
+@mixin icon-button($size: $btn-icon-size-md) {
+   width: $size;
+   height: $size;
+}
+
+@mixin outline-btn() {
+   color: $color-accent;
+   border: 1px solid $color-accent;
+   background-color: transparent;
+}
