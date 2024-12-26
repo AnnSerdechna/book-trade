@@ -1,0 +1,66 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+.link {
+   @include flex-center();
+   color: $color-accent;
+   font-weight: $font-semibold;
+   font-size: $font-size-xs;
+   opacity: 0.6;
+   border-radius: $radius-base;
+   transition:
+      color $transition-delay,
+      opacity $transition-delay,
+      background-color $transition-delay;
+
+   &:hover {
+      opacity: 1;
+   }
+
+   &.asIcon {
+      @include flex-center();
+      @include icon-button();
+      background: 'red';
+      opacity: 1;
+
+      &.sm {
+         @include icon-button($btn-icon-size-sm);
+      }
+
+      &:hover {
+         background: transparent;
+      }
+   }
+
+   &.asBtn {
+      display: flex;
+      align-items: center;
+      padding: 0 $space-sm;
+      height: $btn-height-md;
+      opacity: 1;
+      color: $color-text-primary;
+      font-weight: $font-default;
+      background-color: $color-beige;
+   }
+
+   &.primary {
+      @include primary-btn();
+   }
+
+   &.outline {
+      @include outline-btn();
+   }
+
+   &.ghost {
+      color: $color-text-secondary;
+      background-color: transparent;
+
+      &:hover {
+         color: $color-text-primary;
+         background-color: $color-beige;
+      }
+   }
+
+   &.fullWidth {
+      width: 100%;
+   }
+}

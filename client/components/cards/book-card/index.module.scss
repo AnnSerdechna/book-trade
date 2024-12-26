@@ -1,0 +1,80 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+
+.bookCard {
+   @include flex-column();
+   justify-content: space-between;
+   height: 100%;
+
+   &:hover {
+      .top {
+         .actions {
+               opacity: 1;
+            }
+         
+            .imageWrap {
+               &::after {
+                  opacity: 0.6;
+               }
+            }
+      }
+   }
+
+   &.isFavorite {
+      .top {
+         .actions {
+            opacity: 1;
+         }
+      }
+   }
+
+   .topLink {
+      flex: 1;
+   }
+
+   .top {
+      position: relative;
+      @include flex-column();
+      height: 100%;
+
+      .actions {
+         @include flex-column($space-xs);
+         position: absolute;
+         top: $space-sm;
+         right: $space-sm;
+         opacity: 0;
+         transition: opacity $transition-delay;
+      }
+
+      .imageWrap {
+         position: relative;
+         width: 100%;
+         height: 300px;
+
+         &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            opacity: 0;
+            transition: opacity $transition-delay;
+         }
+
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+         }
+      }
+
+      .info {
+         @include flex-column($space-xs);
+         justify-content: space-between;
+         flex-grow: 1;
+      }
+   }
+}

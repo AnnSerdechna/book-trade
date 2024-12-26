@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+
+.collapse {
+   .header,
+   .content {
+      padding: $space-sm;
+   }
+
+   .header {
+      @include flex-row();
+   }
+
+   .trigger {
+      @include flex-row();
+
+      svg {
+         width: 20px;
+         height: 18px;
+         transition: transform $transition-delay;
+      }
+   }
+}
+

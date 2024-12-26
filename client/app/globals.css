@@ -1,0 +1,71 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* :root {
+   --color-primary: #fbf7f4;
+   --color-accent: #eee6e2;
+   --color-beige: #ccc1be;
+   --color-blue: #456086;
+   --color-green: #1D7D81;
+   --color-red: #c66267;
+   --color-orange: #f8bd8d;
+   --color-dark-gray: #5c6f8e;
+   --color-light-gray: #f2f2f2;
+   --color-gray: #dfdbd8;
+   --color-white: #fff;
+   --color-black: #000;
+
+   --color-text-primary: #000;
+   --color-text-secondary: #a7a7a7;
+   --color-text-accent: #456086;
+
+   --border-radius-md: 16px;
+   --border-radius-sm: 8px;
+   --border-radius-xs: 4px;
+
+   --height-header: 5rem;
+   --width-container: 68rem;
+
+   --font-size-xl: 2.25rem;
+   --font-size-lg: 2rem;
+   --font-size-md: 1.5rem;
+   --font-size-sm: 1.125rem;
+   --font-size-xs: 0.9rem;
+   --font-size-base: 1rem;
+} */
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 16px;
+}
+
+body {
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+ul {
+   list-style-type: none;
+}
+
+ul,
+li {
+   padding: 0;
+   margin: 0;
+}
+button {
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}

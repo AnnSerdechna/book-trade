@@ -1,0 +1,47 @@
+@import '@/styles/variables';
+
+.title {
+   color: $color-text-primary;
+   font-weight: $font-semibold;
+   font-family: $family-sans;
+
+   &.secondary {
+      color: $color-text-secondary;
+   }
+
+   &.accent {
+      color: $color-title-accent;
+   }
+
+   &.serif {
+      font-family: $family-serif;
+   }
+
+   &.font-sm {
+      font-size: $font-size-sm;
+   }
+
+   &.font-md {
+      font-size: $font-size-md;
+   }
+
+   &.font-xl {
+      font-size: $font-size-xl;
+   }
+
+   &.font-lg {
+      font-size: $font-size-lg;
+   }
+
+   &.font-xs {
+      font-size: $font-size-xs;
+   }
+
+   &.font-base {
+      font-size: $font-size-base;
+   }
+
+   &.centered {
+      text-align: center;
+   }
+}

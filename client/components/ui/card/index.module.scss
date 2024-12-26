@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+
+.card {
+   width: min-content;
+   border-radius: $radius-base;
+
+   &.fullWidth {
+      width: 100%;
+   }
+
+   &.bordered {
+      padding: $space-md;
+      border: 1px solid $color-gray;
+
+      &:hover {
+         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+   }
+
+   @media screen and (max-width: $screen-sm) {
+      width: 100%;
+   }
+}

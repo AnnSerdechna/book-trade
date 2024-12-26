@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+
+.cardsGrid {
+  &.cols-5 {
+      @include grid(5, $space-lg);
+
+      @media screen and (max-width: $screen-lg) {
+         @include grid(4);
+      }
+      @media screen and (max-width: $screen-md) {
+         @include grid(3);
+      }
+      @media screen and (max-width: $screen-sm) {
+         @include grid(2);
+      }
+  }
+
+  &.cols-4 {
+     @include grid(4, $space-lg);
+
+     @media screen and (max-width: $screen-lg) {
+        @include grid(3);
+     }
+
+     @media screen and (max-width: $screen-md) {
+        @include grid(2);
+     }
+
+     @media screen and (max-width: $screen-sm) {
+        @include grid(1);
+     }
+  }
+}
