@@ -1,11 +1,11 @@
-import { FC, JSX } from 'react';
+import { FC, JSX, ReactNode } from 'react';
 import clsx from 'clsx';
 
 import styles from './index.module.scss';
 
 interface TitleProps {
    level?: 1 | 2 | 3 | 4 | 5 | 6;
-   title: string;
+   title: string | ReactNode;
    type?: 'primary' | 'secondary' | 'accent';
    family?: 'sans' | 'serif';
    centered?: boolean;

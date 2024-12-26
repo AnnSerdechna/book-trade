@@ -6,7 +6,7 @@ import styles from './index.module.scss';
 import { Title } from '@/components/ui';
 
 type CollapseProps = {
-   title: string;
+   title: string | ReactNode;
    children: ReactNode
 }
 

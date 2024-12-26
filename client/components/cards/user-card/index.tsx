@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 
 import styles from './index.module.scss';
-import { Card, Title, Text, Collapse } from '@/components/ui';
+import { Card, Title, Text, Collapse, Badge } from '@/components/ui';
 
 export const UserCard: FC = () => {
    return (
@@ -27,13 +27,26 @@ export const UserCard: FC = () => {
                      <Text text='since Jul, 2024' secondary />
                   </div>
                </div>
-            </div></Link>
+            </div>
+         </Link>
 
-         <Collapse title={'Book 3'}>
+         <Collapse 
+            title={(
+               <Badge count={3}>
+                  {'Book'}
+               </Badge>
+            )}
+         >
             Book 1
          </Collapse>
 
-         <Collapse title={'Incoming request 2'}>
+         <Collapse
+            title={(
+               <Badge count={2}>
+                  {'Incoming request'}
+               </Badge>
+            )}
+         >
             Request 1
          </Collapse>
       </Card>

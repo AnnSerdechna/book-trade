@@ -2,8 +2,6 @@
 
 .card {
    width: min-content;
-   // padding: $space-md;
-   // background: $color-white;
    border-radius: $radius-base;
 
    &.fullWidth {
@@ -12,7 +10,6 @@
 
    &.bordered {
       padding: $space-md;
-      // background: $color-white;
       border: 1px solid $color-gray;
 
       &:hover {
